@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Form Card -->
+        <div class="card" id="formCard">
+            <h2>Registration Form</h2>
+            <p>Please enter your details below</p>
+
+            <form id="myForm">
+
+                <input type="text" id="name"
+                    placeholder="Enter Your Name" required>
+
+                <input type="email" id="email"
+                    placeholder="Enter Your Email" required>
+
+                <input type="tel" id="phone"
+                    placeholder="Enter Your Phone" required>
+
+                <textarea id="message"
+                    placeholder="Enter Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        <!-- Second Card -->
+        <div class="card result-card" id="resultCard">
+
+            <h2>Submitted Successfully!</h2>
+            <p>Your information is:</p>
+
+            <div class="details">
+                <h3>Name:</h3>
+                <p id="showName"></p>
+
+                <h3>Email:</h3>
+                <p id="showEmail"></p>
+
+                <h3>Phone:</h3>
+                <p id="showPhone"></p>
+
+                <h3>Message:</h3>
+                <p id="showMessage"></p>
+            </div>
+
+            <button onclick="closeCard()">Close</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
